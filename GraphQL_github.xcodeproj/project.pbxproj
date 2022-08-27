@@ -77,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				1927BF6B28B9CDDB00FDB42D /* Home */,
-				1927BF5928B51C4900FDB42D /* HomeView.swift */,
-				1927BF6C28B9CE8000FDB42D /* HomeViewModel.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -86,6 +84,8 @@
 		1927BF6B28B9CDDB00FDB42D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1927BF5928B51C4900FDB42D /* HomeView.swift */,
+				1927BF6C28B9CE8000FDB42D /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
