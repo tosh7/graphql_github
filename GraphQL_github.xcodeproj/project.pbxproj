@@ -13,6 +13,7 @@
 		1927BF5F28B51C4A00FDB42D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1927BF5E28B51C4A00FDB42D /* Preview Assets.xcassets */; };
 		1927BF6728B5232600FDB42D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 1927BF6628B5232600FDB42D /* Apollo */; };
 		1927BF6928B5232600FDB42D /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 1927BF6828B5232600FDB42D /* ApolloWebSocket */; };
+		1927BF6D28B9CE8000FDB42D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BF6C28B9CE8000FDB42D /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		1927BF5928B51C4900FDB42D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1927BF5B28B51C4A00FDB42D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1927BF5E28B51C4A00FDB42D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1927BF6C28B9CE8000FDB42D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				1927BF6B28B9CDDB00FDB42D /* Home */,
 				1927BF5928B51C4900FDB42D /* HomeView.swift */,
+				1927BF6C28B9CE8000FDB42D /* HomeViewModel.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1927BF5A28B51C4900FDB42D /* HomeView.swift in Sources */,
+				1927BF6D28B9CE8000FDB42D /* HomeViewModel.swift in Sources */,
 				1927BF5828B51C4900FDB42D /* GraphQL_githubApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
