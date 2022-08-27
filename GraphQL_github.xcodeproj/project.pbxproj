@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1927BF5828B51C4900FDB42D /* GraphQL_githubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BF5728B51C4900FDB42D /* GraphQL_githubApp.swift */; };
-		1927BF5A28B51C4900FDB42D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BF5928B51C4900FDB42D /* ContentView.swift */; };
+		1927BF5A28B51C4900FDB42D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BF5928B51C4900FDB42D /* HomeView.swift */; };
 		1927BF5C28B51C4A00FDB42D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1927BF5B28B51C4A00FDB42D /* Assets.xcassets */; };
 		1927BF5F28B51C4A00FDB42D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1927BF5E28B51C4A00FDB42D /* Preview Assets.xcassets */; };
 		1927BF6728B5232600FDB42D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 1927BF6628B5232600FDB42D /* Apollo */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		1927BF5428B51C4900FDB42D /* GraphQL_github.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphQL_github.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1927BF5728B51C4900FDB42D /* GraphQL_githubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL_githubApp.swift; sourceTree = "<group>"; };
-		1927BF5928B51C4900FDB42D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1927BF5928B51C4900FDB42D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1927BF5B28B51C4A00FDB42D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1927BF5E28B51C4A00FDB42D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				1927BF5728B51C4900FDB42D /* GraphQL_githubApp.swift */,
-				1927BF5928B51C4900FDB42D /* ContentView.swift */,
+				1927BF6A28B9CDA200FDB42D /* Scenes */,
 				1927BF5B28B51C4A00FDB42D /* Assets.xcassets */,
 				1927BF5D28B51C4A00FDB42D /* Preview Content */,
 			);
@@ -69,6 +69,22 @@
 				1927BF5E28B51C4A00FDB42D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1927BF6A28B9CDA200FDB42D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1927BF6B28B9CDDB00FDB42D /* Home */,
+				1927BF5928B51C4900FDB42D /* HomeView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1927BF6B28B9CDDB00FDB42D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1927BF5A28B51C4900FDB42D /* ContentView.swift in Sources */,
+				1927BF5A28B51C4900FDB42D /* HomeView.swift in Sources */,
 				1927BF5828B51C4900FDB42D /* GraphQL_githubApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
