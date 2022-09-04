@@ -29,6 +29,7 @@
 		1927BF6F28B9CFEA00FDB42D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		1927BF7228B9D5D500FDB42D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1927BF7628B9DAD100FDB42D /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		19FF388428C4FC7E009A0C17 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				1927BF5728B51C4900FDB42D /* GraphQL_githubApp.swift */,
+				19FF388428C4FC7E009A0C17 /* schema.json */,
 				1927BF6A28B9CDA200FDB42D /* Scenes */,
 				1927BF6E28B9CFD900FDB42D /* API */,
 				1927BF7128B9D5C000FDB42D /* Utils */,
@@ -102,6 +104,7 @@
 		1927BF6E28B9CFD900FDB42D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				19FF387F28C4AA23009A0C17 /* GraphQLs */,
 				1927BF6F28B9CFEA00FDB42D /* APIClient.swift */,
 			);
 			path = API;
@@ -115,6 +118,13 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		19FF387F28C4AA23009A0C17 /* GraphQLs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GraphQLs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1927BF6228B51C4A00FDB42D /* Build configuration list for PBXNativeTarget "GraphQL_github" */;
 			buildPhases = (
+				19FF387D28C49223009A0C17 /* Apollo */,
 				1927BF5028B51C4900FDB42D /* Sources */,
 				1927BF5128B51C4900FDB42D /* Frameworks */,
 				1927BF5228B51C4900FDB42D /* Resources */,
@@ -187,6 +198,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19FF387D28C49223009A0C17 /* Apollo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Apollo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1927BF5028B51C4900FDB42D /* Sources */ = {
