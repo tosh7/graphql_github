@@ -17,7 +17,6 @@
 		1927BF7028B9CFEA00FDB42D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BF6F28B9CFEA00FDB42D /* APIClient.swift */; };
 		1927BF7328B9D5D500FDB42D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927BF7228B9D5D500FDB42D /* Utils.swift */; };
 		1927BF7728B9DAD100FDB42D /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1927BF7628B9DAD100FDB42D /* Secrets.plist */; };
-		19FF388A28C5024C009A0C17 /* Repository.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 19FF388928C5024C009A0C17 /* Repository.graphql */; };
 		19FF388C28C50474009A0C17 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF388B28C50474009A0C17 /* API.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +33,7 @@
 		19FF388428C4FC7E009A0C17 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		19FF388928C5024C009A0C17 /* Repository.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Repository.graphql; sourceTree = "<group>"; };
 		19FF388B28C50474009A0C17 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = GraphQL_github/API.swift; sourceTree = SOURCE_ROOT; };
+		19FF388D28C505A6009A0C17 /* IssuesAndCommentsForRepository.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = IssuesAndCommentsForRepository.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				1927BF5728B51C4900FDB42D /* GraphQL_githubApp.swift */,
+				19FF388B28C50474009A0C17 /* API.swift */,
 				19FF388428C4FC7E009A0C17 /* schema.json */,
 				1927BF6A28B9CDA200FDB42D /* Scenes */,
 				1927BF6E28B9CFD900FDB42D /* API */,
@@ -109,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				19FF387F28C4AA23009A0C17 /* GraphQLs */,
-				19FF388B28C50474009A0C17 /* API.swift */,
 				1927BF6F28B9CFEA00FDB42D /* APIClient.swift */,
 			);
 			path = API;
@@ -127,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				19FF388928C5024C009A0C17 /* Repository.graphql */,
+				19FF388D28C505A6009A0C17 /* IssuesAndCommentsForRepository.graphql */,
 			);
 			path = GraphQLs;
 			sourceTree = "<group>";
@@ -200,7 +201,6 @@
 				1927BF5F28B51C4A00FDB42D /* Preview Assets.xcassets in Resources */,
 				1927BF7728B9DAD100FDB42D /* Secrets.plist in Resources */,
 				1927BF5C28B51C4A00FDB42D /* Assets.xcassets in Resources */,
-				19FF388A28C5024C009A0C17 /* Repository.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
