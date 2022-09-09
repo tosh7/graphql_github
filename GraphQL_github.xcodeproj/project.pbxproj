@@ -18,6 +18,7 @@
 		1927BF7728B9DAD100FDB42D /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1927BF7628B9DAD100FDB42D /* Secrets.plist */; };
 		19FF388C28C50474009A0C17 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF388B28C50474009A0C17 /* API.swift */; };
 		19FF389028CBA0B5009A0C17 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF388F28CBA0B5009A0C17 /* Network.swift */; };
+		19FF389228CBA61C009A0C17 /* Result+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF389128CBA61C009A0C17 /* Result+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		19FF388B28C50474009A0C17 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = GraphQL_github/API.swift; sourceTree = SOURCE_ROOT; };
 		19FF388D28C505A6009A0C17 /* IssuesAndCommentsForRepository.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = IssuesAndCommentsForRepository.graphql; sourceTree = "<group>"; };
 		19FF388F28CBA0B5009A0C17 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		19FF389128CBA61C009A0C17 /* Result+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				1927BF7228B9D5D500FDB42D /* Utils.swift */,
+				19FF389128CBA61C009A0C17 /* Result+extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1927BF7328B9D5D500FDB42D /* Utils.swift in Sources */,
+				19FF389228CBA61C009A0C17 /* Result+extension.swift in Sources */,
 				1927BF5A28B51C4900FDB42D /* HomeView.swift in Sources */,
 				1927BF6D28B9CE8000FDB42D /* HomeViewModel.swift in Sources */,
 				1927BF5828B51C4900FDB42D /* GraphQL_githubApp.swift in Sources */,
