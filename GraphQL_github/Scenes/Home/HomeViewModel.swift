@@ -11,7 +11,11 @@ protocol HomeViewModelType {
 
 final class HomeViewModel: ObservableObject, HomeViewModelInputs, HomeViewModelOutputs, HomeViewModelType {
 
-    init() {}
+    init() {
+        Network.shared.apollo.fetch(query: IssuesAndCommentsForRepositoryQuery()) { result in
+            print(result)
+        }
+    }
 
     var input: HomeViewModelInputs { self }
     var output: HomeViewModelOutputs { self }
