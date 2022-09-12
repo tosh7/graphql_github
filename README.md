@@ -13,7 +13,8 @@ Referenced by https://graphql.org/
 
 ## How to use
 1. Clone this repository
-2. create `Secrets.plist`
+2. Create `Secrets.plist`  
+Inside of the plist is below.
 ```
 <dict>
 	<key>bearer_token</key>
